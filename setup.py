@@ -17,6 +17,6 @@ setup(
     version=sereader_version,
     author='Kristof Rozgonyi',
     author_email='rstofi@gmail.com',
-    description='Python package to read serial binary image or spectra (.ser) created with FEI, Tecnai or Titan microscopes',
+    description='Python package to read serial binary image or spectra (.ser) created with FEI Tecnai and Titan transmission electron microscopes',
     install_requires=requirements
     )

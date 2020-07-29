@@ -1,7 +1,7 @@
 """
 SEReader
 ========
-Python package to read serial binary image or spectra (.ser) created with FEI, Tecnai or Titan microscopes.
+Python package to read serial binary image or spectra (.ser) created with FEI Tecnai and Titan transmission electron microscopes.
 
 Author(s): Kristof Rozgonyi (@rstofi)
 """
