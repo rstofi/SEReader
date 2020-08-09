@@ -6,11 +6,17 @@ import re
 with open("requirements.txt", "r") as f:
     requirements = f.read().splitlines()
 
-version_file = os.path.join(os.path.abspath(os.path.dirname(__file__)),'sereader','__version__.py')
+def get_version():
+    version_file = os.path.join(os.path.abspath(os.path.dirname(__file__)),'sereader','__version__.py')
 
-with open(version_file, "r") as f:
-    lines = f.read()
-    sereader_version = re.search(r"^_*version_* = ['\"]([^'\"]*)['\"]", lines, re.M).group(1)
+    with open(version_file, "r") as f:
+        lines = f.read()
+        version = re.search(r"^_*version_* = ['\"]([^'\"]*)['\"]", lines, re.M).group(1)
+        f.close()
+
+        return version
+
+sereader_version = get_version()
 
 setup(
     name='sereader',
